@@ -3,6 +3,7 @@ import './App.css';
 
 import Nav from './components/Nav';
 import About from './components/About';
+import Portfolio from './components/Portfolio';
 
 function App() {
   const [currentPage, setCurrentPage] = useState('About');
@@ -16,6 +17,9 @@ function App() {
       <main>
         {currentPage === 'about' && 
           <About></About>
+        }
+        {currentPage === 'portfolio' &&
+          <Portfolio></Portfolio>
         }
       </main>
     </div>

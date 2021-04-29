@@ -6,27 +6,29 @@ function Nav(props) {
     setCurrentPage
   } = props;
 
+  const title = '<Cal />'
+
   return (
     <header>
-      <h1>Cal</h1>
-      <nav>
+      <h1 className="logo">{title}</h1>
+      <nav className="navbar">
         <ul>
-          <li>
+          <li className={`${currentPage==='about' && 'navActive'}`}>
             <a href="#about" onClick={() => setCurrentPage('about')}>
               About Me
             </a>
           </li>
-          <li>
+          <li className={`${currentPage==='portfolio' && 'navActive'}`}>
             <a href="#portfolio" onClick={() => setCurrentPage('portfolio')}>
               Portfolio
             </a>
           </li>
-          <li>
+          <li className={`${currentPage==='contact' && 'navActive'}`}>
             <a href="#contact" onClick={() => setCurrentPage('contact')}>
               Contact Me
             </a>
           </li>
-          <li>
+          <li className={`${currentPage==='resume' && 'navActive'}`}>
             <a href="#resume" onClick={() => setCurrentPage('resume')}>
               Resume
             </a>

@@ -1,0 +1,52 @@
+// Variables
+$base-color: #272727;
+$secondary: #84828F;
+$accent: #FFB140;
+
+* {
+  margin: 0;
+  padding: 0px 10px;
+  box-sizing: border-box;
+}
+
+body {
+  background:$base-color;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+
+  p {
+    font-family: 'Karla', sans-serif;
+  }
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 36px;
+  letter-spacing: 10px;
+}
+
+.navbar {
+  ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    li {
+      list-style: none;
+
+      a {
+        text-decoration: none;
+        color: $secondary;
+      }
+    }
+  }
+}
+
+.navActive a {
+  color: $accent !important;
+}

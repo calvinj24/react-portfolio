@@ -29,6 +29,10 @@ function ContactForm() {
         setErrorMessage('');
       }
     }
+    if (!errorMessage) {
+      setFormState({ ...formState, [e.target.name]: e.target.value });
+      console.log(formState);
+    }
   };
 
   return (

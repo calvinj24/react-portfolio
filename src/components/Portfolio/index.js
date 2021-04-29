@@ -8,19 +8,27 @@ function Portfolio() {
   const [projects] = useState([
     {
       name: '12Wishes',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+      github: 'https://github.com/chriswein12/wish-list',
+      deployment: 'https://twelve-wishes.herokuapp.com/'
     },
     {
       name: 'RunBuddy',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+      github: '',
+      deployment: ''
     },
     {
       name: 'myTask',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+      github: '',
+      deployment: ''
     },
     {
       name: 'test3',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+      github: '',
+      deployment: ''
     }
   ]);
 
@@ -34,12 +42,11 @@ function Portfolio() {
       {isModalOpen && <Modal onClose={toggleModal} currentProject={currentProject} />}
       <div>
         {projects.map((project, i)=> (
-          <div>
+          <div key={project.name}>
             <img
               // src={require(`../../assets/screenshots/${project.name}.jpg`)} 
               alt={project.name}
               onClick={() => toggleModal(project)}
-              key={project.name}
             />
             <h1>{project.name}</h1>
           </div>
@@ -47,6 +54,6 @@ function Portfolio() {
       </div>
     </div>
   )
-}
+} 
 
 export default Portfolio;

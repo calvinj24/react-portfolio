@@ -40,15 +40,18 @@ function Portfolio() {
   return(
     <div>
       {isModalOpen && <Modal onClose={toggleModal} currentProject={currentProject} />}
-      <div>
+      <div className="card-grid">
         {projects.map((project, i)=> (
-          <div key={project.name}>
+          <div key={project.name} className="card">
             <img
               // src={require(`../../assets/screenshots/${project.name}.jpg`)} 
               alt={project.name}
-              onClick={() => toggleModal(project)}
             />
-            <h1>{project.name}</h1>
+            <div className="card-content">
+              <h3 className="card-title">{project.name}</h3>
+              <p className="card-body">{project.description}</p>
+              <button className="button" onClick={() => toggleModal(project)}>Learn More</button>
+            </div> 
           </div>
         ))}
       </div>

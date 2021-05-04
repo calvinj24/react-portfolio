@@ -5,7 +5,7 @@ $accent: #FFB140;
 
 * {
   margin: 0;
-  padding: 0px 10px;
+  padding: 0px 0px;
   box-sizing: border-box;
 }
 
@@ -13,7 +13,6 @@ body {
   background:$base-color;
   color: white;
   font-family: 'Montserrat', sans-serif;
-
   p {
     font-family: 'Karla', sans-serif;
   }
@@ -23,6 +22,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 5%;
 }
 
 .logo {
@@ -50,3 +50,64 @@ header {
 .navActive a {
   color: $accent !important;
 }
+
+main {
+  padding: 20px 10%;
+}
+
+// portfolio styles
+.card-grid {
+  display: grid;
+  gap: 1em;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+  background-color: $secondary;
+  padding: 8rem 0 0;
+  max-width: 35ch;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+$card-padding: 1.5rem;
+
+.card-content {
+  padding: $card-padding;
+  background: linear-gradient(
+    rgba(39,39,39, 0),
+    rgba(39,39,39, 0.3) 20%,
+    rgba(39,39,39, 1)
+  );
+}
+
+.card-title {
+  position: relative;
+  width: max-content;
+}
+
+.card-title::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  left: -1 * $card-padding;
+  bottom: 0;
+  background: $accent;
+  width: 100%;
+}
+
+.button {
+  cursor: pointer;
+  display: inline-block;
+  color: white;
+  background: none;
+  border:  .15rem $accent solid;
+  padding: 0.5em 1.25em;
+}
+
+.button:hover,
+.button:focus {
+  background: $accent;
+  color: $base-color;
+}
+

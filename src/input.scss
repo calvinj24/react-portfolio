@@ -1,6 +1,6 @@
 // Variables
-$base-color: #272727;
-$secondary: #84828F;
+$base-color: #202020;
+$secondary: #ffffff;
 $accent: #FFB140;
 
 * {
@@ -10,19 +10,37 @@ $accent: #FFB140;
 }
 
 body {
-  background:$base-color;
-  color: white;
+  background:$secondary;
+  color: $base-color;
   font-family: 'Montserrat', sans-serif;
   p {
     font-family: 'Karla', sans-serif;
   }
 }
 
+.ft-light {
+  color: $secondary;
+}
+
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 5%;
+  position: relative;
+  height: 50vh;
+  min-height: 500px;
+  overflow: hidden;
+}
+
+.headerBG{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: $base-color;
+  transform: skewY(-6deg);
+  transform-origin: top left;
+  z-index: -1;
 }
 
 .logo {
@@ -52,7 +70,8 @@ header {
 }
 
 main {
-  padding: 20px 10%;
+  padding-left: 20%;
+  padding-right:20%
 }
 
 // portfolio styles

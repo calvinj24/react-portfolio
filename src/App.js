@@ -5,6 +5,7 @@ import Nav from './components/Nav';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
 import ContactForm from './components/Contact';
+import Resume from './components/Resume';
 
 function App() {
   const [currentPage, setCurrentPage] = useState('about');
@@ -24,6 +25,9 @@ function App() {
         }
         {currentPage === 'contact' &&
           <ContactForm></ContactForm>
+        }
+        {currentPage === 'resume' &&
+          <Resume></Resume>
         }
       </main>
     </div>

@@ -62,52 +62,44 @@ main {
   grid-template-columns: repeat(3, 1fr);
 }
 
-.card {
-  background-color: $secondary;
-  padding: 8rem 0 0;
-  max-width: 35ch;
-  border-radius: 0.5rem;
-  overflow: hidden;
-}
-
-$card-padding: 1.5rem;
-
-.card-content {
-  padding: $card-padding;
-  background: linear-gradient(
-    rgba(39,39,39, 0),
-    rgba(39,39,39, 0.3) 20%,
-    rgba(39,39,39, 1)
-  );
-}
-
-.card-title {
-  position: relative;
-  width: max-content;
-}
-
-.card-title::after {
-  content: "";
+.modalBackdrop {
   position: absolute;
-  height: 4px;
-  left: -1 * $card-padding;
+  overflow: auto;
+  background: rgba(0, 0, 0, .65);
+  top: 0;
+  right: 0;
+  top: 0;
+  right: 0;
   bottom: 0;
-  background: $accent;
-  width: 100%;
+  left: 0;
+  z-index: 1;
+}
+.modalContainer {
+	background: coral;
+	border-radius: 5px;
+	max-width: 100%;
+	margin: 50px auto;
+	padding: 15px;
+  width: 960px;
+  position: relative;
 }
 
-.button {
-  cursor: pointer;
-  display: inline-block;
-  color: white;
-  background: none;
-  border:  .15rem $accent solid;
-  padding: 0.5em 1.25em;
+.modalTitle {
+	font-size: 18px;
+	font-weight: 600;
+	margin-bottom: 25px;
 }
 
-.button:hover,
-.button:focus {
-  background: $accent;
-  color: $base-color;
+.modalClose {
+	background: none;
+	border: 0;
+	color: #fff;
+	cursor: pointer;
+	font-size: 16px;
+  font-weight: 600;
+  padding: 10px 15px;	
+	margin-bottom: 30px;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
-

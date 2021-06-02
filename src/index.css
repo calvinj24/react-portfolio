@@ -52,47 +52,47 @@ main {
   grid-template-columns: repeat(3, 1fr);
 }
 
-.card {
-  background-color: #84828F;
-  padding: 8rem 0 0;
-  max-width: 35ch;
-  border-radius: 0.5rem;
-  overflow: hidden;
-}
-
-.card-content {
-  padding: 1.5rem;
-  background: linear-gradient(rgba(39, 39, 39, 0), rgba(39, 39, 39, 0.3) 20%, #272727);
-}
-
-.card-title {
-  position: relative;
-  width: max-content;
-}
-
-.card-title::after {
-  content: "";
+.modalBackdrop {
   position: absolute;
-  height: 4px;
-  left: -1.5rem;
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.65);
+  top: 0;
+  right: 0;
+  top: 0;
+  right: 0;
   bottom: 0;
-  background: #FFB140;
-  width: 100%;
+  left: 0;
+  z-index: 1;
 }
 
-.button {
-  cursor: pointer;
-  display: inline-block;
-  color: white;
+.modalContainer {
+  background: coral;
+  border-radius: 5px;
+  max-width: 100%;
+  margin: 50px auto;
+  padding: 15px;
+  width: 960px;
+  position: relative;
+}
+
+.modalTitle {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.modalClose {
   background: none;
-  border: 0.15rem #FFB140 solid;
-  padding: 0.5em 1.25em;
-}
-
-.button:hover,
-.button:focus {
-  background: #FFB140;
-  color: #272727;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 15px;
+  margin-bottom: 30px;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 /*# sourceMappingURL=index.css.map */

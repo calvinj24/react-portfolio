@@ -6,14 +6,14 @@ function Modal({ onClose, currentProject }) {
   return(
     <div className="modalBackdrop">
       <div className="modalContainer">
+        <button type="button" onClick={onClose} className="modalClose">
+          Close
+        </button>
         <h3 className="modalTitle"> {name} </h3>
         {/* large image here */}
         <p>
           {description}
         </p>
-        <button type="button" onClick={onClose}>
-          Close
-        </button>
        <div>
           <a href={github} target="_blank" rel="noopener noreferrer">GitHub</a>
           <a href={deployment} target="_blank" rel="noopener noreferrer">Deployment</a> 

@@ -39,7 +39,7 @@ function Portfolio() {
 
   return(
     <div>
-      {isModalOpen && <Modal onClose={toggleModal} currentProject={currentProject} />}
+      {isModalOpen && <Modal onClose={toggleModal} currentProject={currentProject}/>}
       <div className="card-grid">
         {projects.map((project, i)=> (
           <div key={project.name} className="card">

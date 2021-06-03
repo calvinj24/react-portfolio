@@ -38,6 +38,24 @@ header {
   z-index: -1;
 }
 
+.header-enter {
+  opacity: 0.01;
+}
+
+.header-enter.header-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.header-leave {
+  opacity: 1;
+}
+
+.header-leave.header-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
+
 .logo {
   font-size: 36px;
   letter-spacing: 10px;

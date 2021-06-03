@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 function Modal({ onClose, currentProject }) {
   const { name, description, github, deployment } = currentProject;

@@ -22,6 +22,8 @@ header {
   height: 50vh;
   min-height: 500px;
   overflow: hidden;
+  padding-left: 20%;
+  padding-right: 20%;
 }
 
 .headerBG {
@@ -39,8 +41,9 @@ header {
 }
 
 .logo {
-  font-size: 36px;
-  letter-spacing: 10px;
+  color: #FFB140;
+  font-size: 24px;
+  letter-spacing: 0.5rem;
 }
 
 .navbar ul {
@@ -63,6 +66,28 @@ header {
 main {
   padding-left: 20%;
   padding-right: 20%;
+}
+
+.message {
+  margin-top: 5rem;
+}
+.message h1 {
+  font-size: 3rem;
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+}
+.message .button {
+  font-size: 12px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  padding: 1rem;
+  border: 3px solid #FFB140;
+  border-radius: 0.5rem;
+  display: inline-block;
+  transition: all 0.3s ease 0s;
 }
 
 .card-grid {

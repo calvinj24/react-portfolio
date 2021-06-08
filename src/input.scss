@@ -27,6 +27,8 @@ header {
   height: 50vh;
   min-height: 500px;
   overflow: hidden;
+  padding-left: 20%;
+  padding-right: 20%;
 }
 
 .headerBG{
@@ -44,8 +46,9 @@ header {
 }
 
 .logo {
-  font-size: 36px;
-  letter-spacing: 10px;
+  color: $accent;
+  font-size: 24px;
+  letter-spacing: 0.5rem;
 }
 
 .navbar {
@@ -71,7 +74,31 @@ header {
 
 main {
   padding-left: 20%;
-  padding-right:20%
+  padding-right: 20%;
+}
+
+.message {
+  margin-top: 5rem;
+
+  h1 {
+    font-size: 3rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .button {
+    font-size: 12px;
+    color: $secondary;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    padding: 1rem;
+    border: 3px solid $accent;
+    border-radius: .5rem;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+  }
 }
 
 // portfolio styles

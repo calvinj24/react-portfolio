@@ -12,8 +12,8 @@ function Message(props) {
           <h1>I'm Cal Johnson</h1>
           <p>A front-end web developer.</p>
           <div className="cta">
-            <button className="contact-btn">Contact Me</button>
-            <button className="my-work-btn">My Work</button>
+            <a href="/" className="button">Hire Me</a>
+            <a href="/" className="button">My Work</a>
           </div>
         </div>
       }
